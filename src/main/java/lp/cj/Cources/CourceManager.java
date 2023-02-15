@@ -16,5 +16,10 @@ public class CourceManager {
         for (CourceDTO courceDTO: listTr){
             System.out.println(String.format("Trainer Id : %s ---- Trainer Name : %s ----- Cource count : %s ---- Student count : %s",courceDTO.getTrainer_id(),courceDTO.getTname(),courceDTO.getCcount(),courceDTO.getScount())) ;
         }
+        System.out.println("\n\n");
+        List<CourceDTO> crsStud = courceService.courceAlLStudentsimpl();
+        for (CourceDTO courceDTO: crsStud){
+            System.out.println(String.format("Cource Id : %s ---- Cource Name : %s ----- Trainer name : %s ---- Students List : %s",courceDTO.getCource_id(),courceDTO.getCname(),courceDTO.getTname(),courceDTO.getNames()))                ;
+        }
     }
 }

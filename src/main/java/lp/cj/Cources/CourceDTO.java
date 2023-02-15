@@ -2,6 +2,9 @@ package lp.cj.Cources;
 
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Setter
 @Getter
 @AllArgsConstructor
@@ -20,6 +23,8 @@ public class CourceDTO {
 
     public int Scount;
     public int Ccount;
+
+    List<String> names = new ArrayList<>();
 
 
 }
